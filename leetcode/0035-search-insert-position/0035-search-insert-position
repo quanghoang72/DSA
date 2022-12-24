@@ -1,0 +1,17 @@
+class Solution {
+public:
+    //time O(logn)
+    //space O(1)
+    int searchInsert(vector<int>& a, int t) {
+        int n=a.size();
+        int l=0;
+        int h=n-1;
+        while(l<=h){
+            int m=(l+h)/2;
+            if(a[m]==t) return m;
+            else if(a[m]>t) h=m-1;
+            else l=m+1;
+        }
+        return l;
+    }
+};
