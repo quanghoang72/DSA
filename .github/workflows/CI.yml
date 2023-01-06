@@ -35,6 +35,7 @@ jobs:
           test=$(ls -Ileetcode -Igeekforgeeks -Ireadme.md)
           if [[ -d "$test" ]];
           then 
+            rm -r leetcode/$test
             mv $test leetcode/
             git rm -r $test 
             git add leetcode/$test
