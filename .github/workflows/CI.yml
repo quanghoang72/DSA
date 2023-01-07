@@ -35,7 +35,7 @@ jobs:
           test=$(ls -Ileetcode -Igeekforgeeks -Ireadme.md)
           if [[ -d "$test" ]];
           then 
-            if [ -d "$test"]; then
+            if [ -d "leetcode/$test" ]; then
               rm -r leetcode/$test
             fi
             mv $test leetcode/
