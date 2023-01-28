@@ -17,6 +17,8 @@ public:
                     temp.pop_back();
                     while(l+1<r && a[l]==a[l+1]) //skip duplicate
                         l++;
+                    while(l+1<r && a[r]==a[r-1]) //skip duplicate
+                        r--;
                     l++;r--;
                 }
                 else if(sum>t)
