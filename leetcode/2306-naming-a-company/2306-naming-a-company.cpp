@@ -3,7 +3,7 @@ public:
     //time O(n)
     //space O(n)
     long long distinctNames(vector<string>& a) {
-        vector<unordered_set<string>> mp(26);
+        unordered_set<string> mp[26];
         long long res=0;
         
         //goup word by first character to prevent swapping 2 word have same first letter
