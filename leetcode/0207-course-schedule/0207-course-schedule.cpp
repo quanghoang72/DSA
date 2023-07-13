@@ -1,7 +1,7 @@
 class Solution {
 public:
-    //time O(n)
-    //space O(n)
+    //time O(V*E)
+    //space O(V+E)
     bool canFinish(int numC, vector<vector<int>>& course) {
         vector<int> in(numC); //indgree 
         vector<vector<int>> out(numC); //outdegree
