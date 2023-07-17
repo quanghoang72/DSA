@@ -11,7 +11,7 @@
 class Solution {
 public:
     //time O(n)
-    //space O(n stack)
+    //space O(1)
     ListNode* rev(ListNode* ll){
         ListNode* head=ll;
         ListNode* pre=NULL;
